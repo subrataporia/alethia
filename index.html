@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Diagnostics Centre in Bowbazar | Accurate & Reliable Tests a</title>
+    <meta name="description" content="Best diagnostics centre in Bowbazar offering accurate and reliable medical tests." />
+    <meta name="author" content="Alethia Advanced Diagnostic" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        primary: ['var(--font-family)'],
+                        secondary: ['var(--font-family-condensed)'],
+                    },
+                    colors: {
+                        primary: 'var(--primary-color)',
+                        secondary: 'var(--secondary-color)',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-40 border-b border-gray-200 bg-[#f7f5f2] transition-all lg:py-3 py-2 px-3 lg:px-0">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
+
+            <!-- Logo -->
+            <a href="#">
+                <img src="assets/images/logo.png" alt="Alethia Advanced Diagonsitic" class="h-10 lg:h-14">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-black font-medium uppercase">
+
+                <a href="index.html" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                    Home
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                    Book a Test
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                    Find a Doctor
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                    Services
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                    About Us
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <!-- Mobile Button -->
+            <button id="openMenu" class="lg:hidden text-3xl">
+                <i class="ri-menu-line"></i>
+            </button>
+
+        </div>
+    </header>
+
+     <!-- BACKDROP -->
+    <div id="backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition duration-300 z-40"></div>
+
+    <!-- OFF CANVAS -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white/95 backdrop-blur-xl z-50 transform translate-x-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col overflow-y-auto overscroll-contain">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-4 py-2 border-b">
+            <a href="#" class="text-4xl font-bold text-slate-700 font-primary">Author Archive</a>
+            <button id="closeMenu" class="hover:rotate-90 transition">
+                <i class="ri-close-line text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menu -->
+
+        <!-- MOBILE MENU DROPDOWN (FULL) -->
+        <div class="p-5 flex flex-col gap-4 text-gray-800 font-medium">
+
+            <a href="index.html" class="hover:text-rose-600 transition">Home</a>
+            <a href="#" class="hover:text-rose-600 transition">Book a Test</a>
+            <a href="#" class="hover:text-rose-600 transition">Find a Doctor</a>
+            <a href="#" class="hover:text-rose-600 transition">Services</a>
+            <a href="#" class="hover:text-rose-600 transition">About Us</a>
+            <a href="#" class="hover:text-rose-600 transition">Contact Us</a>
+
+            <div class="space-y-3 pt-5 border-t">
+                <!-- Phone -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-phone-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="tel:+1 (555) 000-0000" class="text-sm text-gray-800 block">+1 (555) 000-0000</a>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-mail-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="mailto:contact@authorarchive.com" class="text-sm text-gray-700 break-all">
+                            contact@authorarchive.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex items-start gap-3">
+                    <i class="ri-map-pin-2-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="https://maps.google.com" target="_blank" class="text-sm text-gray-700 hover:text-rose-600">
+                            <b>Literary Agency LLC</b>
+                            123 Publishing Way, New York, NY 10001
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
