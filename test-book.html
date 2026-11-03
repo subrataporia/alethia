@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Select health packages and request a diagnostic test booking with Alethia Advanced Diagnostics.">
+    <title>Book a Test | Alethia Advanced Diagnostics</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--primary-color)',
+                        secondary: 'var(--secondary-color)',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-slate-50">
+    <!-- TOPBAR -->
+    <section class="bg-slate-800 py-2">
+        <div class="max-w-7xl mx-auto px-3 lg:px-0">
+            <p class="text-center text-base text-white font-light">
+                Alethia Advanced Diagnostics is now <b class="bg-rose-500 px-1 py-0.5">OPEN 24×7</b> for all <span class="font-semibold text-yellow-400 color-pulse">Diagnostic & Pathology Services</span>
+            </p>
+        </div>
+    </section>
+    
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-40 border-b border-gray-200 bg-[#f7f5f2] transition-all lg:py-3 py-2 px-3 lg:px-0">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
+
+            <!-- Logo -->
+            <a href="#">
+                <img src="assets/images/logo.png" alt="Alethia Advanced Diagonsitic" class="h-10 lg:h-14">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-black font-medium uppercase">
+
+                <a href="index.html" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Home
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Book a Test
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Find a Doctor
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Services
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Blogs
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    About Us
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <img src="assets/images/NABL_logo_new_image.png" alt="NABL Logo" class="h-10 lg:h-14">
+
+            <!-- Mobile Button -->
+            <button id="openMenu" class="lg:hidden text-3xl">
+                <i class="ri-menu-line"></i>
+            </button>
+
+        </div>
+    </header>
+
+     <div id="backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition duration-300 z-40"></div>
+
+    <!-- OFF CANVAS -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white/95 backdrop-blur-xl z-50 transform translate-x-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col overflow-y-auto overscroll-contain">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-4 py-2 border-b">
+            <a href="#" class="text-4xl font-bold text-slate-700 font-primary">Author Archive</a>
+            <button id="closeMenu" class="hover:rotate-90 transition">
+                <i class="ri-close-line text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menu -->
+
+        <!-- MOBILE MENU DROPDOWN (FULL) -->
+        <div class="p-5 flex flex-col gap-4 text-gray-800 font-medium">
+
+            <a href="index.html" class="hover:text-rose-600 transition">Home</a>
+            <a href="#" class="hover:text-rose-600 transition">Book a Test</a>
+            <a href="#" class="hover:text-rose-600 transition">Find a Doctor</a>
+            <a href="#" class="hover:text-rose-600 transition">Services</a>
+            <a href="#" class="hover:text-rose-600 transition">Blogs</a>
+            <a href="#" class="hover:text-rose-600 transition">About Us</a>
+            <a href="#" class="hover:text-rose-600 transition">Contact Us</a>
+
+            <div class="space-y-3 pt-5 border-t">
+                <!-- Phone -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-phone-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="tel:8100381818" class="text-sm text-gray-800 block">+91 8100381818</a>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-mail-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="mailto:info@alethiadiagnostics.com" class="text-sm text-gray-700 break-all">
+                            info@alethiadiagnostics.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex items-start gap-3">
+                    <i class="ri-map-pin-2-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="https://maps.google.com" target="_blank" class="text-sm text-gray-700 hover:text-rose-600">
+                            10 Raja Subodh Mullick Square, Kolkata - 700013
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <main class="px-4 py-8 sm:py-12">
+        <div class="mx-auto max-w-4xl">
+            <div class="mb-6 text-center">
+                <p class="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-secondary">Diagnostic Tests</p>
+                <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl">Book Your Tests</h1>
+                <p class="mx-auto mt-2 max-w-xl text-sm leading-6 text-slate-600">Choose one or more health packages, select a date, and enter your details.</p>
+            </div>
+
+            <form id="test-booking-form" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-7">
+                <fieldset>
+                    <legend class="mb-3 text-base font-bold text-slate-900">Select test name(s) <span class="text-red-600" aria-hidden="true">*</span></legend>
+                    <details id="test-picker" class="group relative">
+                        <summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-600 marker:content-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                            <span id="test-picker-label">Search and choose health packages</span>
+                            <i class="ri-arrow-down-s-line text-lg transition-transform group-open:rotate-180" aria-hidden="true"></i>
+                        </summary>
+                        <div class="absolute left-0 right-0 top-full z-20 mt-2 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl">
+                            <label for="test-search" class="sr-only">Search tests</label>
+                            <div class="border-b border-slate-200 p-3">
+                                <div class="flex items-center gap-2 rounded-lg border border-slate-300 px-3">
+                                    <i class="ri-search-line text-slate-400" aria-hidden="true"></i>
+                                    <input id="test-search" type="search" autocomplete="off" placeholder="Search test name..." class="min-w-0 flex-1 border-0 py-2.5 text-sm outline-none focus:ring-0">
+                                </div>
+                            </div>
+                            <div id="test-options" class="max-h-64 overflow-y-auto p-2" role="group" aria-label="Available health packages"></div>
+                            <p id="no-test-results" class="hidden px-4 py-5 text-center text-sm text-slate-500">No tests match your search.</p>
+                        </div>
+                    </details>
+
+                    <div id="selected-tests" class="mt-3 space-y-2" aria-live="polite"></div>
+                    <p id="test-selection-error" class="mt-2 hidden text-sm text-red-600">Choose at least one test or package.</p>
+                    <div class="mt-3 flex items-center justify-between gap-3 rounded-lg bg-slate-50 px-4 py-3">
+                        <span class="text-sm font-semibold text-slate-700">Estimated total</span>
+                        <output id="test-total" class="text-base font-bold text-slate-900" aria-live="polite">₹0</output>
+                    </div>
+                    <p class="mt-2 text-sm leading-5 text-slate-500">Package names and prices are from the official website listing. Please confirm current prices and availability with the centre.</p>
+                </fieldset>
+
+                <div class="mt-6 grid gap-4 border-t border-slate-200 pt-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div>
+                        <label for="patient-name" class="mb-1.5 block text-sm font-semibold text-slate-700">Full name <span class="text-red-600" aria-hidden="true">*</span></label>
+                        <input id="patient-name" name="patientName" type="text" autocomplete="name" maxlength="100" required placeholder="Enter your full name" class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30">
+                    </div>
+                    <div>
+                        <label for="patient-phone" class="mb-1.5 block text-sm font-semibold text-slate-700">Phone number <span class="text-red-600" aria-hidden="true">*</span></label>
+                        <input id="patient-phone" name="patientPhone" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[6-9][0-9]{9}" maxlength="10" required placeholder="10-digit mobile number" aria-describedby="phone-help" class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30">
+                        <p id="phone-help" class="mt-1 text-xs text-slate-500">Enter a 10-digit Indian mobile number.</p>
+                    </div>
+                    <div>
+                        <label for="patient-email" class="mb-1.5 block text-sm font-semibold text-slate-700">Email <span class="font-normal text-slate-500">(optional)</span></label>
+                        <input id="patient-email" name="patientEmail" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30">
+                    </div>
+                    <div>
+                        <label for="patient-gender" class="mb-1.5 block text-sm font-semibold text-slate-700">Gender <span class="text-red-600" aria-hidden="true">*</span></label>
+                        <select id="patient-gender" name="patientGender" required class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30">
+                            <option value="">Select gender</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">Other</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="patient-age" class="mb-1.5 block text-sm font-semibold text-slate-700">Age <span class="text-red-600" aria-hidden="true">*</span></label>
+                        <input id="patient-age" name="patientAge" type="number" min="1" max="120" step="1" inputmode="numeric" required placeholder="Enter age" class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30">
+                    </div>
+                    <div>
+                        <label for="test-date" class="mb-1.5 block text-sm font-semibold text-slate-700">Preferred date <span class="text-red-600" aria-hidden="true">*</span></label>
+                        <input id="test-date" name="testDate" type="date" required class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="prescription" class="mb-1.5 block text-sm font-semibold text-slate-700">Upload prescription <span class="font-normal text-slate-500">(optional)</span></label>
+                        <input id="prescription" name="prescription" type="file" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" class="block w-full cursor-pointer rounded-lg border border-slate-300 text-sm text-slate-600 file:mr-4 file:cursor-pointer file:border-0 file:bg-slate-100 file:px-4 file:py-2.5 file:font-semibold file:text-slate-700 hover:file:bg-amber-50">
+                        <p class="mt-1 text-xs text-slate-500">PDF, JPG or PNG; maximum 5 MB. Demo only—file will not be uploaded.</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 border-t border-slate-200 text-center pt-5">
+                    <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-bold text-white transition hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
+                        <i class="ri-calendar-check-line" aria-hidden="true"></i>
+                        Continue Booking
+                    </button>
+                    <p id="booking-status" class="mt-3 hidden rounded-lg border px-4 py-3 text-sm leading-6" role="status" aria-live="polite"></p>
+                </div>
+            </form>
+
+            <p class="mt-4 text-center text-xs leading-5 text-slate-500">This is a static demo form. Submitting it will not send or save a booking or upload your prescription.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer bg-slate-950 text-slate-300">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1fr_0.8fr] lg:gap-12 lg:py-16">
+            <div>
+                <a href="https://www.alethiadiagnostics.com/" class="inline-flex items-center gap-3 text-white" aria-label="Alethia Advanced Diagnostics home">
+                    <span class="grid h-11 w-11 place-items-center rounded-xl bg-primary text-xl font-bold">A</span>
+                    <span class="text-lg font-bold leading-tight">Alethia Advanced<br>Diagnostics</span>
+                </a>
+                <h2 class="mt-6 text-lg font-bold text-white">About Us</h2>
+                <p class="mt-3 max-w-md text-sm leading-7 text-slate-400">Alethia Advanced Diagnostics brings together modern diagnostic technology and experienced professionals to support accurate, timely testing and thoughtful patient care.</p>
+                <a href="https://www.alethiadiagnostics.com/about-us" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-300 transition hover:text-white">
+                    Learn more about us <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Quick Links</h2>
+                <ul class="mt-4 space-y-3 text-sm">
+                    <li><a href="#booking-search" class="transition hover:text-amber-300">Book a Test</a></li>
+                    <li><a href="#doctor-list-title" class="transition hover:text-amber-300">Find a Doctor</a></li>
+                    <li><a href="#diagnostic-services-title" class="transition hover:text-amber-300">Our Services</a></li>
+                    <li><a href="#all-blogs" class="transition hover:text-amber-300">Health Blog</a></li>
+                    <li><a href="#faq" class="transition hover:text-amber-300">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Contact Us</h2>
+                <address class="mt-4 space-y-4 text-sm not-italic">
+                    <p class="flex items-start gap-3">
+                        <i class="ri-map-pin-2-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span>10 Raja Subodh Mullick Square,<br>Kolkata - 700013</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-phone-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span class="flex flex-col gap-2">
+                            <a href="tel:+918100381818" class="transition hover:text-amber-300">+91 8100381818</a>
+                            <a href="tel:+918100381816" class="transition hover:text-amber-300">+91 8100381816</a>
+                            <a href="tel:+919234543210" class="transition hover:text-amber-300">+91 92345 43210</a>
+                        </span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-mail-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <a href="mailto:info@alethiadiagnostics.com" class="break-all transition hover:text-amber-300">info@alethiadiagnostics.com</a>
+                    </p>
+                </address>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Connect With Us</h2>
+                <p class="mt-4 text-sm leading-6 text-slate-400">Follow Alethia Advanced Diagnostics on social media.</p>
+                <div class="mt-5 flex gap-3">
+                    <a href="https://www.facebook.com/alethiadiagnostics/" target="_blank" rel="noopener noreferrer" aria-label="Alethia Advanced Diagnostics on Facebook" class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-facebook-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alethiadiagnostics" target="_blank" rel="noopener noreferrer" aria-label="Alethia Advanced Diagnostics on Instagram" class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-instagram-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p class="mt-6 text-sm font-semibold text-amber-300">Open 24×7</p>
+                <p class="mt-1 text-sm text-slate-400">Diagnostic &amp; Pathology Services</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800">
+            <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Alethia Advanced Diagnostics. All rights reserved.</p>
+                <a href="https://www.alethiadiagnostics.com/" target="_blank" rel="noopener noreferrer" class="transition hover:text-amber-300">Visit our official website</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const tests = [
+                { name: 'Alethia Thyroid Wellness Panel', price: 2200 },
+                { name: 'Alethia Kidney Health Panel', price: 2200 },
+                { name: 'Alethia Liver Health Panel', price: 2200 },
+                { name: 'Alethia Anaemia Panel', price: 2200 },
+                { name: 'Alethia Hormonal Panel – Female', price: 2200 },
+                { name: 'Alethia Hormonal Panel – Male', price: 2200 },
+                { name: 'Alethia Skin & Hair Health Panel', price: 2200 },
+                { name: 'Alethia Fever Package', price: 2200 },
+                { name: 'Alethia Arthritis Screening Panel', price: 2200 },
+                { name: 'Alethia Nutrition & Immunity Panel', price: 2200 },
+                { name: 'Alethia Smoking Risk Assessment', price: 2200 },
+                { name: 'Alethia PCOD/PCOS Panel', price: 2200 },
+            ];
+            const selectedTests = new Set();
+            let hasAttemptedSubmit = false;
+            const form = document.getElementById('test-booking-form');
+            const picker = document.getElementById('test-picker');
+            const search = document.getElementById('test-search');
+            const options = document.getElementById('test-options');
+            const selectedList = document.getElementById('selected-tests');
+            const totalOutput = document.getElementById('test-total');
+            const pickerLabel = document.getElementById('test-picker-label');
+            const selectionError = document.getElementById('test-selection-error');
+            const status = document.getElementById('booking-status');
+            const prescriptionInput = document.getElementById('prescription');
+            const testDate = document.getElementById('test-date');
+            const formatter = new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0,
+            });
+
+            function renderOptions() {
+                const query = search.value.trim().toLocaleLowerCase();
+                const filteredTests = tests.filter(function (test) {
+                    return test.name.toLocaleLowerCase().includes(query);
+                });
+                options.replaceChildren();
+                document.getElementById('no-test-results').classList.toggle('hidden', filteredTests.length > 0);
+
+                filteredTests.forEach(function (test) {
+                    const label = document.createElement('label');
+                    label.className = 'flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition hover:bg-slate-50';
+
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = test.name;
+                    checkbox.checked = selectedTests.has(test.name);
+                    checkbox.className = 'h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary';
+                    checkbox.addEventListener('change', function () {
+                        if (this.checked) {
+                            selectedTests.add(test.name);
+                        } else {
+                            selectedTests.delete(test.name);
+                        }
+                        renderSelected();
+                        renderOptions();
+                    });
+
+                    const name = document.createElement('span');
+                    name.className = 'min-w-0 flex-1 text-slate-700';
+                    name.textContent = test.name;
+                    const price = document.createElement('span');
+                    price.className = 'shrink-0 font-semibold text-slate-900';
+                    price.textContent = formatter.format(test.price);
+
+                    label.append(checkbox, name, price);
+                    options.append(label);
+                });
+            }
+
+            function renderSelected() {
+                selectedList.replaceChildren();
+                let total = 0;
+                tests.forEach(function (test) {
+                    if (!selectedTests.has(test.name)) {
+                        return;
+                    }
+                    total += test.price;
+
+                    const row = document.createElement('div');
+                    row.className = 'flex items-center justify-between gap-3 rounded-lg border border-slate-200 px-3 py-2 text-sm';
+                    const name = document.createElement('span');
+                    name.className = 'min-w-0 flex-1 text-slate-700';
+                    name.textContent = test.name;
+                    const price = document.createElement('span');
+                    price.className = 'shrink-0 font-semibold text-slate-900';
+                    price.textContent = formatter.format(test.price);
+                    const remove = document.createElement('button');
+                    remove.type = 'button';
+                    remove.className = 'grid h-8 w-8 shrink-0 place-items-center rounded-full text-slate-500 transition hover:bg-rose-50 hover:text-rose-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary';
+                    remove.setAttribute('aria-label', 'Remove ' + test.name);
+                    remove.innerHTML = '<i class="ri-close-line" aria-hidden="true"></i>';
+                    remove.addEventListener('click', function () {
+                        selectedTests.delete(test.name);
+                        renderSelected();
+                        renderOptions();
+                    });
+                    row.append(name, price, remove);
+                    selectedList.append(row);
+                });
+
+                totalOutput.textContent = formatter.format(total);
+                pickerLabel.textContent = selectedTests.size
+                    ? selectedTests.size + (selectedTests.size === 1 ? ' test selected' : ' tests selected')
+                    : 'Search and choose health packages';
+                selectionError.classList.toggle('hidden', selectedTests.size > 0 || !hasAttemptedSubmit);
+            }
+
+            function getLocalDateString(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                return year + '-' + month + '-' + day;
+            }
+
+            search.addEventListener('input', renderOptions);
+            document.addEventListener('click', function (event) {
+                if (!picker.contains(event.target)) {
+                    picker.open = false;
+                }
+            });
+            picker.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && picker.open) {
+                    picker.open = false;
+                    picker.querySelector('summary').focus();
+                }
+            });
+            testDate.min = getLocalDateString(new Date());
+            renderOptions();
+            renderSelected();
+
+            const query = new URLSearchParams(window.location.search).get('query');
+            if (query) {
+                search.value = query;
+                picker.open = true;
+                renderOptions();
+                search.focus();
+            }
+
+            prescriptionInput.addEventListener('change', function () {
+                const file = this.files[0];
+                if (file && file.size > 5 * 1024 * 1024) {
+                    this.value = '';
+                    this.setCustomValidity('Please choose a file smaller than 5 MB.');
+                    this.reportValidity();
+                    return;
+                }
+                this.setCustomValidity('');
+            });
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                hasAttemptedSubmit = true;
+                selectionError.classList.toggle('hidden', selectedTests.size > 0);
+                if (selectedTests.size === 0) {
+                    picker.open = true;
+                    search.focus();
+                    return;
+                }
+                if (!form.reportValidity()) {
+                    return;
+                }
+
+                const formattedDate = new Intl.DateTimeFormat('en-IN', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric',
+                }).format(new Date(testDate.value + 'T00:00:00'));
+                status.textContent = 'Demo only: ' + selectedTests.size + (selectedTests.size === 1 ? ' test' : ' tests') + ' selected for ' + formattedDate + '. Estimated total: ' + totalOutput.textContent + '. No booking was sent or saved.';
+                status.className = 'mt-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-950';
+            });
+        }());
+    </script>
+</body>
+
+</html>

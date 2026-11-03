@@ -34,6 +34,17 @@
 </head>
 
 <body>
+
+    <!-- TOPBAR -->
+    <section class="bg-slate-800 py-2">
+        <div class="max-w-7xl mx-auto px-3 lg:px-0">
+            <p class="text-center text-base text-white font-light">
+                Alethia Advanced Diagnostics is now <b class="bg-rose-500 px-1 py-0.5">OPEN 24×7</b> for all <span class="font-semibold text-yellow-400 color-pulse">Diagnostic & Pathology Services</span>
+            </p>
+        </div>
+    </section>
+    
+    <!-- NAVIGATION -->
     <header class="sticky top-0 z-40 border-b border-gray-200 bg-[#f7f5f2] transition-all lg:py-3 py-2 px-3 lg:px-0">
         <div class="flex items-center justify-between max-w-7xl mx-auto">
 
@@ -45,31 +56,37 @@
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-black font-medium uppercase">
 
-                <a href="index.html" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                <a href="index.html" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
                     Home
                 </a>
 
-                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                <a href="book-a-test.html" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
                     Book a Test
                 </a>
 
-                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                <a href="find-a-doctor.html" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
                     Find a Doctor
                 </a>
 
-                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
                     Services
                 </a>
 
-                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Blogs
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
                     About Us
                 </a>
 
-                <a href="#" class="inline-flex items-center py-1 hover:border-b-2 hover:border-primary hover:text-primary">
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
                     Contact Us
                 </a>
 
             </nav>
+
+            <img src="assets/images/NABL_logo_new_image.png" alt="NABL Logo" class="h-10 lg:h-14">
 
             <!-- Mobile Button -->
             <button id="openMenu" class="lg:hidden text-3xl">
@@ -79,8 +96,7 @@
         </div>
     </header>
 
-     <!-- BACKDROP -->
-    <div id="backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition duration-300 z-40"></div>
+     <div id="backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition duration-300 z-40"></div>
 
     <!-- OFF CANVAS -->
     <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white/95 backdrop-blur-xl z-50 transform translate-x-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col overflow-y-auto overscroll-contain">
@@ -99,9 +115,10 @@
         <div class="p-5 flex flex-col gap-4 text-gray-800 font-medium">
 
             <a href="index.html" class="hover:text-rose-600 transition">Home</a>
-            <a href="#" class="hover:text-rose-600 transition">Book a Test</a>
-            <a href="#" class="hover:text-rose-600 transition">Find a Doctor</a>
+            <a href="book-a-test.html" class="hover:text-rose-600 transition">Book a Test</a>
+            <a href="find-a-doctor.html" class="hover:text-rose-600 transition">Find a Doctor</a>
             <a href="#" class="hover:text-rose-600 transition">Services</a>
+            <a href="#" class="hover:text-rose-600 transition">Blogs</a>
             <a href="#" class="hover:text-rose-600 transition">About Us</a>
             <a href="#" class="hover:text-rose-600 transition">Contact Us</a>
 
@@ -110,7 +127,7 @@
                 <div class="flex items-center gap-3">
                     <i class="ri-phone-fill text-rose-600 text-lg"></i>
                     <div>
-                        <a href="tel:+1 (555) 000-0000" class="text-sm text-gray-800 block">+1 (555) 000-0000</a>
+                        <a href="tel:8100381818" class="text-sm text-gray-800 block">+91 8100381818</a>
                     </div>
                 </div>
 
@@ -118,8 +135,8 @@
                 <div class="flex items-center gap-3">
                     <i class="ri-mail-fill text-rose-600 text-lg"></i>
                     <div>
-                        <a href="mailto:contact@authorarchive.com" class="text-sm text-gray-700 break-all">
-                            contact@authorarchive.com
+                        <a href="mailto:info@alethiadiagnostics.com" class="text-sm text-gray-700 break-all">
+                            info@alethiadiagnostics.com
                         </a>
                     </div>
                 </div>
@@ -129,8 +146,7 @@
                     <i class="ri-map-pin-2-fill text-rose-600 text-lg"></i>
                     <div>
                         <a href="https://maps.google.com" target="_blank" class="text-sm text-gray-700 hover:text-rose-600">
-                            <b>Literary Agency LLC</b>
-                            123 Publishing Way, New York, NY 10001
+                            10 Raja Subodh Mullick Square, Kolkata - 700013
                         </a>
                     </div>
                 </div>
@@ -139,6 +155,756 @@
         </div>
 
     </div>
+
+    <!-- BANNER -->
+    <section class="banner-section lg:m-4 m-3 rounded-xl shadow" aria-label="Featured services">
+        <div class="banner-slider">
+            <article class="banner-slide">
+                <img src="assets/images/doctor-booking.webp" alt="Doctor consulting with a patient">
+                <div class="banner-content">
+                    <p class="banner-eyebrow">Care Made Convenient</p>
+                    <h2>Expert care starts with a conversation</h2>
+                    <p>Connect with a doctor and take the next step towards better health.</p>
+                    <a href="find-a-doctor.html" class="banner-cta">Find a Doctor <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                </div>
+            </article>
+
+            <article class="banner-slide">
+                <img src="assets/images/24x7-pathology.webp" alt="Pathology specialist working in a modern diagnostic laboratory">
+                <div class="banner-content">
+                    <p class="banner-eyebrow">Alethia Advanced Diagnostics</p>
+                    <h1>Reliable diagnostics, available 24×7</h1>
+                    <p>Accurate pathology services and dependable care, whenever you need them.</p>
+                    <a href="#" class="banner-cta">Explore Our Services <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                </div>
+            </article>
+
+            <article class="banner-slide">
+                <img src="assets/images/advanced-pathology.webp" alt="Diagnostic professional operating advanced laboratory equipment">
+                <div class="banner-content">
+                    <p class="banner-eyebrow">Advanced Pathology</p>
+                    <h2>Advanced testing. Trusted results.</h2>
+                    <p>Modern technology and experienced professionals support every report.</p>
+                    <a href="#" class="banner-cta">View Our Tests <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="max-w-6xl mx-auto px-4 lg:px-0 py-8 lg:py-12">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-semibold text-slate-800 font-secondary">Find a Doctor or Search for Lab Tests from Home</h2>
+                <p class="text-gray-600 mt-2 text-lg">Search for the services you need from our comprehensive offerings.</p>
+            </div>
+            <form id="booking-search" action="test-book.html" method="get" role="search" class="flex flex-col gap-3 sm:flex-row">
+                <input type="search" name="query" aria-label="Search services" placeholder="Search for services..." class="min-w-0 flex-1 bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 py-3 px-4 rounded-lg">
+                <button type="submit" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-secondary text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                    <i class="ri-search-line" aria-hidden="true"></i>
+                    Search
+                </button>
+            </form>
+        </div>
+        
+        <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <a class="group flex min-h-[72px] items-center justify-between gap-3 rounded-lg border border-primary bg-gradient-to-br from-slate-100 to-amber-50 px-4 py-3 text-gray-800 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-primary hover:from-primary hover:to-primary hover:text-white hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="appointment-booking.html">
+                <span class="min-w-0">
+                    <strong class="block font-semibold text-lg">Doctor Appointment</strong>
+                    <span class="mt-0.5 block text-xs text-gray-500 transition-colors group-hover:text-white">Book a consultation with a doctor</span>
+                </span>
+                <i class="ri-stethoscope-line shrink-0 text-3xl text-primary transition-colors group-hover:text-white" aria-hidden="true"></i>
+            </a>
+            <a class="group flex min-h-[72px] items-center justify-between gap-3 rounded-lg border border-primary bg-gradient-to-br from-slate-100 to-amber-50 px-4 py-3 text-gray-800 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-primary hover:from-primary hover:to-primary hover:text-white hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="test-book.html">
+                <span class="min-w-0">
+                    <strong class="block font-semibold text-lg">Test Book</strong>
+                    <span class="mt-0.5 block text-xs text-gray-500 transition-colors group-hover:text-white">Find and book diagnostic tests</span>
+                </span>
+                <i class="ri-test-tube-line shrink-0 text-3xl text-primary transition-colors group-hover:text-white" aria-hidden="true"></i>
+            </a>
+            <a class="group flex min-h-[72px] items-center justify-between gap-3 rounded-lg border border-primary bg-gradient-to-br from-slate-100 to-amber-50 px-4 py-3 text-gray-800 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-primary hover:from-primary hover:to-primary hover:text-white hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="#">
+                <span class="min-w-0">
+                    <strong class="block font-semibold text-lg">Report Download</strong>
+                    <span class="mt-0.5 block text-xs text-gray-500 transition-colors group-hover:text-white">Access your test reports online</span>
+                </span>
+                <i class="ri-file-download-line shrink-0 text-3xl text-primary transition-colors group-hover:text-white" aria-hidden="true"></i>
+            </a>
+            <a class="group flex min-h-[72px] items-center justify-between gap-3 rounded-lg border border-primary bg-gradient-to-br from-slate-100 to-amber-50 px-4 py-3 text-gray-800 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-primary hover:from-primary hover:to-primary hover:text-white hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="#">
+                <span class="min-w-0">
+                    <strong class="block font-semibold text-lg">Home Collection</strong>
+                    <span class="mt-0.5 block text-xs text-gray-500 transition-colors group-hover:text-white">Book a sample collection at home</span>
+                </span>
+                <i class="ri-home-heart-line shrink-0 text-3xl text-primary transition-colors group-hover:text-white" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section class="bg-[#f7f5f2] py-10 lg:py-14" aria-labelledby="doctor-list-title">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mb-6 flex items-end justify-between gap-4">
+                <div>
+                    <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-secondary">Meet Our Specialists</p>
+                    <h2 id="doctor-list-title" class="text-2xl font-bold text-gray-900 sm:text-3xl">Find the Right Doctor for You</h2>
+                    <p class="mt-1 text-sm text-gray-500">Sample profiles — replace with verified doctor details before publishing.</p>
+                </div>
+                <div class="flex shrink-0 gap-2">
+                    <button id="doctor-prev" type="button" aria-label="Previous doctors" class="grid h-10 w-10 place-items-center rounded-full border border-gray-300 bg-white text-gray-700 transition hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                        <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                    </button>
+                    <button id="doctor-next" type="button" aria-label="Next doctors" class="grid h-10 w-10 place-items-center rounded-full border border-gray-300 bg-white text-gray-700 transition hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                        <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="-mx-2 doctor-slider">
+                <article class="px-2">
+                    <div class="h-full overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                        <img src="assets/images/doctor-portrait-arindam.jpg" alt="Sample doctor portrait" loading="lazy" decoding="async" class="aspect-square w-full object-cover object-[50%_35%]">
+                        <div class="p-4">
+                            <span class="mb-2 inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Cardiology</span>
+                            <h3 class="text-lg font-bold text-gray-900">Dr. Arindam Sen</h3>
+                            <p class="text-sm text-gray-600">MD (Medicine), DM (Cardiology) · Cardiologist</p>
+                            <p class="mt-2 text-sm font-medium text-gray-700"><i class="ri-briefcase-4-line mr-1 text-primary" aria-hidden="true"></i>12+ Years Experience</p>
+                            <div class="mt-4 flex gap-2">
+                                <a href="doctor-profile.html?doctor=Dr.%20Arindam%20Sen" class="flex-1 rounded-md border border-primary px-3 py-2 text-center text-sm font-semibold text-primary transition hover:bg-amber-50">View Details</a>
+                                <a href="appointment-booking.html?department=Cardiology&amp;doctor=Dr.%20Arindam%20Sen" class="flex-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-secondary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-2">
+                    <div class="h-full overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                        <img src="assets/images/doctor-portrait-ananya.jpg" alt="Sample doctor portrait" loading="lazy" decoding="async" class="aspect-square w-full object-cover object-[50%_35%]">
+                        <div class="p-4">
+                            <span class="mb-2 inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">ENT</span>
+                            <h3 class="text-lg font-bold text-gray-900">Dr. Ananya Roy</h3>
+                            <p class="text-sm text-gray-600">MS (ENT) · ENT Surgeon</p>
+                            <p class="mt-2 text-sm font-medium text-gray-700"><i class="ri-briefcase-4-line mr-1 text-primary" aria-hidden="true"></i>10+ Years Experience</p>
+                            <div class="mt-4 flex gap-2">
+                                <a href="doctor-profile.html?doctor=Dr.%20Ananya%20Roy" class="flex-1 rounded-md border border-primary px-3 py-2 text-center text-sm font-semibold text-primary transition hover:bg-amber-50">View Details</a>
+                                <a href="appointment-booking.html?department=ENT&amp;doctor=Dr.%20Ananya%20Roy" class="flex-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-secondary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-2">
+                    <div class="h-full overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                        <img src="assets/images/doctor-portrait-rohan.jpg" alt="Sample doctor portrait" loading="lazy" decoding="async" class="aspect-square w-full object-cover object-[50%_35%]">
+                        <div class="p-4">
+                            <span class="mb-2 inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Dentistry</span>
+                            <h3 class="text-lg font-bold text-gray-900">Dr. Rohan Mukherjee</h3>
+                            <p class="text-sm text-gray-600">BDS, MDS · Dental Surgeon</p>
+                            <p class="mt-2 text-sm font-medium text-gray-700"><i class="ri-briefcase-4-line mr-1 text-primary" aria-hidden="true"></i>15+ Years Experience</p>
+                            <div class="mt-4 flex gap-2">
+                                <a href="doctor-profile.html?doctor=Dr.%20Rohan%20Mukherjee" class="flex-1 rounded-md border border-primary px-3 py-2 text-center text-sm font-semibold text-primary transition hover:bg-amber-50">View Details</a>
+                                <a href="appointment-booking.html?department=Dentistry&amp;doctor=Dr.%20Rohan%20Mukherjee" class="flex-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-secondary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-2">
+                    <div class="h-full overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                        <img src="assets/images/doctor-portrait-meera.jpg" alt="Sample doctor portrait" loading="lazy" decoding="async" class="aspect-square w-full object-cover object-[50%_35%]">
+                        <div class="p-4">
+                            <span class="mb-2 inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Urology</span>
+                            <h3 class="text-lg font-bold text-gray-900">Dr. Meera Das</h3>
+                            <p class="text-sm text-gray-600">MS (General Surgery), MCh (Urology) · Urologist</p>
+                            <p class="mt-2 text-sm font-medium text-gray-700"><i class="ri-briefcase-4-line mr-1 text-primary" aria-hidden="true"></i>9+ Years Experience</p>
+                            <div class="mt-4 flex gap-2">
+                                <a href="doctor-profile.html?doctor=Dr.%20Meera%20Das" class="flex-1 rounded-md border border-primary px-3 py-2 text-center text-sm font-semibold text-primary transition hover:bg-amber-50">View Details</a>
+                                <a href="appointment-booking.html?department=Urology&amp;doctor=Dr.%20Meera%20Das" class="flex-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-secondary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIAGNOSTIC SERVICES -->
+    <section class="bg-gradient-to-br from-slate-50 via-white to-slate-100 py-12 lg:py-16" aria-labelledby="diagnostic-services-title">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mx-auto mb-8 max-w-2xl text-center">
+                <p class="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-secondary">Our Services</p>
+                <h2 id="diagnostic-services-title" class="text-2xl font-bold text-slate-900 sm:text-3xl">Diagnostics for Every Step of Your Health</h2>
+                <p class="mt-3 text-sm leading-6 text-slate-600 sm:text-base">From accurate lab testing to preventive health checks, find the care and testing you need.</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <a href="#clinical-pathology" class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="assets/images/service-clinical-pathology.jpg" alt="Clinical diagnostic laboratory with testing equipment" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/10 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 grid h-11 w-11 place-items-center rounded-xl bg-white/95 text-xl text-primary shadow-lg"><i class="ri-test-tube-line" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">Clinical Pathology, Biochemistry &amp; Haematology</h3>
+                        <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">Reliable laboratory testing to support diagnosis and monitor your health.</p>
+                        <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">Explore service <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                    </div>
+                </a>
+
+                <a href="#microbiology-serology" class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="assets/images/service-microbiology.jpg" alt="Laboratory specialist examining a sample with a microscope" loading="lazy" decoding="async" class="h-full w-full object-cover object-[70%_center] transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/10 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 grid h-11 w-11 place-items-center rounded-xl bg-white/95 text-xl text-primary shadow-lg"><i class="ri-microscope-line" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">Microbiology &amp; Serology</h3>
+                        <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">Specialized tests to help identify infections and assess immune response.</p>
+                        <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">Explore service <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                    </div>
+                </a>
+
+                <a href="#histopathology-cytology" class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="assets/images/service-histopathology.jpg" alt="Laboratory specialist examining a sample under a microscope" loading="lazy" decoding="async" class="h-full w-full object-cover object-[55%_center] transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/10 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 grid h-11 w-11 place-items-center rounded-xl bg-white/95 text-xl text-primary shadow-lg"><i class="ri-search-eye-line" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">Histopathology &amp; Cytology</h3>
+                        <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">Detailed examination of tissue and cell samples by the laboratory team.</p>
+                        <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">Explore service <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                    </div>
+                </a>
+
+                <a href="#wellness-panels" class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="assets/images/service-wellness.jpg" alt="Doctor representing preventive and wellness care" loading="lazy" decoding="async" class="h-full w-full object-cover object-[65%_center] transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/10 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 grid h-11 w-11 place-items-center rounded-xl bg-white/95 text-xl text-primary shadow-lg"><i class="ri-heart-pulse-line" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">Preventive &amp; Wellness Panels</h3>
+                        <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">Proactive health check panels to help you keep track of your wellbeing.</p>
+                        <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">Explore service <i class="ri-arrow-right-line" aria-hidden="true"></i></span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="relative isolate mt-8 flex min-h-[280px] flex-col items-start justify-center gap-8 overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-800 to-[#9b7138] p-7 text-white shadow-xl sm:p-10 lg:min-h-[320px] lg:flex-row lg:items-center lg:justify-between lg:p-12">
+                <div aria-hidden="true" class="pointer-events-none absolute -right-16 -top-24 -z-10 h-80 w-80 rounded-full border border-white/10 bg-gradient-to-br from-white/10 to-transparent"></div>
+                <div aria-hidden="true" class="pointer-events-none absolute -bottom-36 right-1/4 -z-10 h-72 w-72 rounded-full border border-white/10"></div>
+                <div aria-hidden="true" class="pointer-events-none absolute right-8 top-8 -z-10 h-40 w-40 rounded-full border border-white/10 sm:right-16 sm:top-12"></div>
+                <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_20%,rgba(255,255,255,0.12)_1px,transparent_1.5px)] bg-[size:18px_18px] opacity-40"></div>
+                <div class="max-w-2xl">
+                    <span class="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-200/30 bg-amber-300/15 px-4 py-2 text-xs font-bold uppercase tracking-wider text-amber-100 sm:text-sm">
+                        <i class="ri-heart-pulse-line" aria-hidden="true"></i>
+                        Care tailored to your needs
+                    </span>
+                    <p class="text-2xl font-bold leading-tight sm:text-3xl lg:text-4xl">Take the next step towards better health.</p>
+                    <p class="mt-3 max-w-xl text-sm leading-6 text-slate-200 sm:text-base">Choose a diagnostic test, book a doctor appointment, or arrange sample collection at home—all in one place.</p>
+                </div>
+                <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row lg:shrink-0 lg:flex-col xl:flex-row">
+                    <a href="#booking-search" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-center text-sm font-bold text-slate-900 shadow-lg transition duration-200 hover:-translate-y-0.5 hover:bg-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                        <i class="ri-calendar-check-line" aria-hidden="true"></i>
+                        Book a Test or Appointment
+                    </a>
+                    <a href="#booking-search" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/40 bg-white/10 px-6 py-3.5 text-center text-sm font-bold text-white backdrop-blur transition duration-200 hover:-translate-y-0.5 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                        <i class="ri-home-heart-line" aria-hidden="true"></i>
+                        Book Home Collection
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose-section overflow-hidden bg-gradient-to-br from-white via-amber-50/60 to-slate-100 py-12 lg:py-16" aria-labelledby="why-choose-us-title">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mb-8 max-w-2xl why-reveal">
+                <p class="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-secondary">Why Choose Us</p>
+                <h2 id="why-choose-us-title" class="text-2xl font-bold text-slate-900 sm:text-3xl">Care that fits around you</h2>
+                <p class="mt-3 text-sm leading-6 text-slate-600 sm:text-base">Reliable diagnostics, made easier for every patient.</p>
+            </div>
+
+            <div class="grid items-stretch gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+                <div class="why-reveal relative isolate flex min-h-[300px] flex-col justify-between overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-800 p-7 text-white shadow-xl sm:min-h-[340px] sm:p-10">
+                    <div aria-hidden="true" class="pointer-events-none absolute -right-20 -top-20 -z-10 h-64 w-64 rounded-full border border-emerald-200/20 bg-emerald-300/10"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute -bottom-28 right-1/4 -z-10 h-64 w-64 rounded-full border border-white/10"></div>
+                    <div>
+                        <span class="inline-flex items-center gap-2 rounded-full border border-emerald-200/25 bg-emerald-300/10 px-4 py-2 text-xs font-bold uppercase tracking-wider text-emerald-100">
+                            <span class="h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_12px_rgba(110,231,183,0.9)]" aria-hidden="true"></span>
+                            Always here for you
+                        </span>
+                        <p class="mt-8 text-6xl font-black leading-none tracking-tight sm:text-7xl">24<span class="text-emerald-300">×</span>7</p>
+                        <h3 class="mt-3 text-2xl font-bold sm:text-3xl">Diagnostics, day &amp; night</h3>
+                        <p class="mt-3 max-w-sm text-sm leading-6 text-slate-200 sm:text-base">Our diagnostic and pathology services are open around the clock, so care is available whenever you need it.</p>
+                    </div>
+                    <a href="#booking-search" class="mt-8 inline-flex w-fit items-center gap-2 font-semibold text-emerald-200 transition hover:gap-3 hover:text-white">
+                        Book a test <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <article class="why-reveal group flex gap-5 border-b border-slate-200 py-6 first:pt-0">
+                        <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl text-primary shadow-sm transition group-hover:bg-primary group-hover:text-white">
+                            <i class="ri-microscope-line" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Modern diagnostic facilities</h3>
+                            <p class="mt-1 text-sm leading-6 text-slate-600">A wide range of laboratory services supported by modern testing equipment.</p>
+                        </div>
+                    </article>
+
+                    <article class="why-reveal group flex gap-5 border-b border-slate-200 py-6">
+                        <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl text-secondary shadow-sm transition group-hover:bg-secondary group-hover:text-white">
+                            <i class="ri-user-heart-line" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Supportive patient care</h3>
+                            <p class="mt-1 text-sm leading-6 text-slate-600">A caring team to help guide you through your diagnostic visit and testing.</p>
+                        </div>
+                    </article>
+
+                    <article class="why-reveal group flex gap-5 py-6">
+                        <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl text-emerald-700 shadow-sm transition group-hover:bg-emerald-700 group-hover:text-white">
+                            <i class="ri-home-heart-line" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Convenient home collection</h3>
+                            <p class="mt-1 text-sm leading-6 text-slate-600">Request sample collection from home and make testing more convenient.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEALTH BLOG -->
+    <section id="all-blogs" class="bg-white py-12 lg:py-16" aria-labelledby="health-blog-title">
+        <div class="mx-auto max-w-7xl px-4">
+            <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-secondary">Health &amp; Insights</p>
+                    <h2 id="health-blog-title" class="text-2xl font-bold text-slate-900 sm:text-3xl">Latest from Our Blog</h2>
+                    <p class="mt-2 text-sm text-slate-600 sm:text-base">Helpful reads for a healthier, more informed you.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="flex gap-2">
+                        <button id="blog-prev" type="button" aria-label="Previous blog posts" class="grid h-10 w-10 place-items-center rounded-full border border-slate-300 bg-white text-slate-700 transition hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                            <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                        </button>
+                        <button id="blog-next" type="button" aria-label="Next blog posts" class="grid h-10 w-10 place-items-center rounded-full border border-slate-300 bg-white text-slate-700 transition hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <a href="#all-blogs" class="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                        View All Blogs <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="-mx-2 blog-slider">
+                <article class="h-full p-3">
+                    <div class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <a href="#article-cbc" class="block overflow-hidden" aria-label="Read: Understanding Your Complete Blood Count">
+                        <img src="assets/images/service-clinical-pathology.jpg" alt="Modern clinical diagnostic laboratory" loading="lazy" decoding="async" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                    </a>
+                    <div class="flex flex-1 flex-col p-5">
+                        <div class="mb-3 flex items-center justify-between gap-2">
+                            <span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Diagnostics</span>
+                            <time datetime="2026-10-12" class="text-xs text-slate-500">12 Oct 2026</time>
+                        </div>
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">Understanding Your Complete Blood Count</h3>
+                        <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">Learn what common CBC measurements can tell you about your overall health and wellbeing.</p>
+                        <a href="#article-cbc" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">
+                            Read More <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="h-full p-3">
+                    <div class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <a href="#article-lab-tests" class="block overflow-hidden" aria-label="Read: How to Prepare for a Lab Test">
+                        <img src="assets/images/service-microbiology.jpg" alt="Healthcare professional examining a laboratory sample" loading="lazy" decoding="async" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                    </a>
+                    <div class="flex flex-1 flex-col p-5">
+                        <div class="mb-3 flex items-center justify-between gap-2">
+                            <span class="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-800">Patient Guide</span>
+                            <time datetime="2026-09-28" class="text-xs text-slate-500">28 Sep 2026</time>
+                        </div>
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">How to Prepare for a Lab Test</h3>
+                        <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">A few simple steps before your test can help make your visit smoother and more comfortable.</p>
+                        <a href="#article-lab-tests" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">
+                            Read More <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="h-full p-3">
+                    <div class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <a href="#article-preventive-health" class="block overflow-hidden" aria-label="Read: Why Preventive Health Checks Matter">
+                        <img src="assets/images/service-wellness.jpg" alt="Doctor providing guidance about preventive health" loading="lazy" decoding="async" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                    </a>
+                    <div class="flex flex-1 flex-col p-5">
+                        <div class="mb-3 flex items-center justify-between gap-2">
+                            <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">Wellness</span>
+                            <time datetime="2026-09-10" class="text-xs text-slate-500">10 Sep 2026</time>
+                        </div>
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">Why Preventive Health Checks Matter</h3>
+                        <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">Regular check-ups can help you keep track of important health markers and discuss changes early.</p>
+                        <a href="#article-preventive-health" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">
+                            Read More <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="h-full p-3">
+                    <div class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <a href="#article-histopathology" class="block overflow-hidden" aria-label="Read: A Guide to Histopathology and Cytology">
+                        <img src="assets/images/service-histopathology.jpg" alt="Laboratory professional examining a sample under a microscope" loading="lazy" decoding="async" class="h-52 w-full object-cover object-[55%_center] transition duration-500 group-hover:scale-105">
+                    </a>
+                    <div class="flex flex-1 flex-col p-5">
+                        <div class="mb-3 flex items-center justify-between gap-2">
+                            <span class="rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800">Lab Tests</span>
+                            <time datetime="2026-08-22" class="text-xs text-slate-500">22 Aug 2026</time>
+                        </div>
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">A Guide to Histopathology and Cytology</h3>
+                        <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">Discover how tissue and cell samples are examined to provide useful diagnostic information.</p>
+                        <a href="#article-histopathology" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:gap-3">
+                            Read More <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section id="faq" class="bg-[#f7f5f2] py-14 lg:py-20" aria-labelledby="faq-title">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+            <div class="lg:sticky lg:top-24 lg:self-start">
+                <p class="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-secondary">Need to Know</p>
+                <h2 id="faq-title" class="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">Frequently Asked Questions</h2>
+                <p class="mt-4 max-w-md leading-7 text-slate-600">Find answers to common questions about booking tests, preparing for your visit, reports, and home collection.</p>
+                <a href="#booking-search" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
+                    Search Tests <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="faq-list space-y-3">
+                <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                    <h3>
+                        <button id="faq-question-1" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="faq-answer-1">
+                            How can I book a diagnostic test?
+                            <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-1" class="faq-answer" role="region" aria-labelledby="faq-question-1" aria-hidden="true">
+                        <div class="faq-answer-inner">
+                            <p class="pb-5 pr-8 leading-7 text-slate-600">Use the test search above to find the test you need, then follow the booking options shown on the page. You can also contact the centre if you need help choosing a test.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                    <h3>
+                        <button id="faq-question-2" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="faq-answer-2">
+                            Do I need to fast before a blood test?
+                            <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-2" class="faq-answer" role="region" aria-labelledby="faq-question-2" aria-hidden="true">
+                        <div class="faq-answer-inner">
+                            <p class="pb-5 pr-8 leading-7 text-slate-600">Fasting requirements depend on the specific test. Check the instructions provided when you book, or ask your healthcare professional or the diagnostic centre before your visit.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                    <h3>
+                        <button id="faq-question-3" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="faq-answer-3">
+                            Is home sample collection available?
+                            <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-3" class="faq-answer" role="region" aria-labelledby="faq-question-3" aria-hidden="true">
+                        <div class="faq-answer-inner">
+                            <p class="pb-5 pr-8 leading-7 text-slate-600">Home collection can be requested while arranging your booking. Availability may depend on your location, the test, and the appointment slot.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                    <h3>
+                        <button id="faq-question-4" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="faq-answer-4">
+                            How will I receive my test report?
+                            <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-4" class="faq-answer" role="region" aria-labelledby="faq-question-4" aria-hidden="true">
+                        <div class="faq-answer-inner">
+                            <p class="pb-5 pr-8 leading-7 text-slate-600">Report delivery options and expected timelines vary by test. Please check the details provided at booking or contact the centre for an update on your report.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                    <h3>
+                        <button id="faq-question-5" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="faq-answer-5">
+                            Should I bring a doctor’s prescription?
+                            <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-5" class="faq-answer" role="region" aria-labelledby="faq-question-5" aria-hidden="true">
+                        <div class="faq-answer-inner">
+                            <p class="pb-5 pr-8 leading-7 text-slate-600">Some tests may require a prescription or referral. Bring one if your doctor has provided it, and confirm any test-specific requirements when booking.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer bg-slate-950 text-slate-300">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1fr_0.8fr] lg:gap-12 lg:py-16">
+            <div>
+                <a href="https://www.alethiadiagnostics.com/" class="inline-flex items-center gap-3 text-white" aria-label="Alethia Advanced Diagnostics home">
+                    <span class="grid h-11 w-11 place-items-center rounded-xl bg-primary text-xl font-bold">A</span>
+                    <span class="text-lg font-bold leading-tight">Alethia Advanced<br>Diagnostics</span>
+                </a>
+                <h2 class="mt-6 text-lg font-bold text-white">About Us</h2>
+                <p class="mt-3 max-w-md text-sm leading-7 text-slate-400">Alethia Advanced Diagnostics brings together modern diagnostic technology and experienced professionals to support accurate, timely testing and thoughtful patient care.</p>
+                <a href="https://www.alethiadiagnostics.com/about-us" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-300 transition hover:text-white">
+                    Learn more about us <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Quick Links</h2>
+                <ul class="mt-4 space-y-3 text-sm">
+                    <li><a href="#booking-search" class="transition hover:text-amber-300">Book a Test</a></li>
+                    <li><a href="find-a-doctor.html" class="transition hover:text-amber-300">Find a Doctor</a></li>
+                    <li><a href="#diagnostic-services-title" class="transition hover:text-amber-300">Our Services</a></li>
+                    <li><a href="#all-blogs" class="transition hover:text-amber-300">Health Blog</a></li>
+                    <li><a href="#faq" class="transition hover:text-amber-300">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Contact Us</h2>
+                <address class="mt-4 space-y-4 text-sm not-italic">
+                    <p class="flex items-start gap-3">
+                        <i class="ri-map-pin-2-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span>10 Raja Subodh Mullick Square,<br>Kolkata - 700013</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-phone-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span class="flex flex-col gap-2">
+                            <a href="tel:+918100381818" class="transition hover:text-amber-300">+91 8100381818</a>
+                            <a href="tel:+918100381816" class="transition hover:text-amber-300">+91 8100381816</a>
+                            <a href="tel:+919234543210" class="transition hover:text-amber-300">+91 92345 43210</a>
+                        </span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-mail-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <a href="mailto:info@alethiadiagnostics.com" class="break-all transition hover:text-amber-300">info@alethiadiagnostics.com</a>
+                    </p>
+                </address>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Connect With Us</h2>
+                <p class="mt-4 text-sm leading-6 text-slate-400">Follow Alethia Advanced Diagnostics on social media.</p>
+                <div class="mt-5 flex gap-3">
+                    <a href="https://www.facebook.com/alethiadiagnostics/" target="_blank" rel="noopener noreferrer" aria-label="Alethia Advanced Diagnostics on Facebook" class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-facebook-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alethiadiagnostics" target="_blank" rel="noopener noreferrer" aria-label="Alethia Advanced Diagnostics on Instagram" class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-instagram-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p class="mt-6 text-sm font-semibold text-amber-300">Open 24×7</p>
+                <p class="mt-1 text-sm text-slate-400">Diagnostic &amp; Pathology Services</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800">
+            <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Alethia Advanced Diagnostics. All rights reserved.</p>
+                <a href="https://www.alethiadiagnostics.com/" target="_blank" rel="noopener noreferrer" class="transition hover:text-amber-300">Visit our official website</a>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="fixed-cta" aria-label="Quick actions">
+        <div class="fixed-cta-inner">
+            <a href="#booking-search" class="fixed-cta-button fixed-cta-booking">
+                <i class="ri-calendar-check-line" aria-hidden="true"></i>
+                <span>
+                    <strong>Quick Doctor Booking</strong>
+                    <small>Book your doctor appointment online</small>
+                </span>
+            </a>
+            <a href="tel:+918100381818" class="fixed-cta-button fixed-cta-call">
+                <i class="ri-phone-fill" aria-hidden="true"></i>
+                <span>
+                    <strong>Support Call</strong>
+                    <small>+91 8100381818</small>
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('.faq-answer').on('transitionend', function (event) {
+                if (event.originalEvent.propertyName === 'height' && this.closest('.faq-item').classList.contains('is-open')) {
+                    this.style.height = 'auto';
+                }
+            });
+
+            $('.faq-question').on('click', function () {
+                const question = this;
+                const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+                $('.faq-question').each(function () {
+                    const expanded = this === question ? !isExpanded : false;
+                    const panel = document.getElementById(this.getAttribute('aria-controls'));
+                    const item = this.closest('.faq-item');
+                    const wasExpanded = this.getAttribute('aria-expanded') === 'true';
+
+                    if (expanded === wasExpanded) {
+                        return;
+                    }
+
+                    if (expanded) {
+                        item.classList.add('is-open');
+                        this.setAttribute('aria-expanded', 'true');
+                        panel.setAttribute('aria-hidden', 'false');
+                        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                            panel.style.height = 'auto';
+                            return;
+                        }
+
+                        panel.style.height = '0px';
+                        void panel.offsetHeight;
+                        panel.style.height = panel.scrollHeight + 'px';
+                        return;
+                    }
+
+                    panel.style.height = panel.getBoundingClientRect().height + 'px';
+                    void panel.offsetHeight;
+                    this.setAttribute('aria-expanded', String(expanded));
+                    panel.setAttribute('aria-hidden', 'true');
+                    item.classList.remove('is-open');
+                    panel.style.height = '0px';
+                });
+            });
+
+            $('.banner-slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3500,
+                arrows: true,
+                dots: false,
+                fade: true,
+                pauseOnHover: true,
+                pauseOnFocus: true,
+                prevArrow: '<button type="button" class="slick-prev banner-arrow" aria-label="Previous slide"><i class="ri-arrow-left-line" aria-hidden="true"></i></button>',
+                nextArrow: '<button type="button" class="slick-next banner-arrow" aria-label="Next slide"><i class="ri-arrow-right-line" aria-hidden="true"></i></button>'
+            });
+
+            $('.doctor-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: true,
+                pauseOnFocus: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            $('#doctor-prev').on('click', function () {
+                $('.doctor-slider').slick('slickPrev');
+            });
+
+            $('#doctor-next').on('click', function () {
+                $('.doctor-slider').slick('slickNext');
+            });
+
+            $('.blog-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: false,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            $('#blog-prev').on('click', function () {
+                $('.blog-slider').slick('slickPrev');
+            });
+
+            $('#blog-next').on('click', function () {
+                $('.blog-slider').slick('slickNext');
+            });
+
+            const whyChooseSection = document.querySelector('.why-choose-section');
+            if ('IntersectionObserver' in window && whyChooseSection) {
+                whyChooseSection.classList.add('why-scroll-ready');
+                const whyChooseObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('why-scroll-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                whyChooseObserver.observe(whyChooseSection);
+            }
+        });
+    </script>
 
 </body>
 </html>
