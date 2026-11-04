@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Alethia Advanced Diagnostics</title>
+    <meta name="description" content="Contact Alethia Advanced Diagnostics in Kolkata for diagnostic services, appointments and general enquiries.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--primary-color)',
+                        secondary: 'var(--secondary-color)',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <!-- TOPBAR -->
+    <section class="bg-slate-800 py-2">
+        <div class="max-w-7xl mx-auto px-3 lg:px-0">
+            <p class="text-center text-base text-white font-light">
+                Alethia Advanced Diagnostics is now <b class="bg-rose-500 px-1 py-0.5">OPEN 24×7</b> for all <span class="font-semibold text-yellow-400 color-pulse">Diagnostic & Pathology Services</span>
+            </p>
+        </div>
+    </section>
+    
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-40 border-b border-gray-200 bg-[#f7f5f2] transition-all lg:py-3 py-2 px-3 lg:px-0">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Alethia Advanced Diagonsitic" class="h-10 lg:h-14">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-black font-medium uppercase">
+
+                <a href="index.html" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Home
+                </a>
+
+                <a href="test-book.html" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Book a Test
+                </a>
+
+                <a href="find-a-doctor.html" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Find a Doctor
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Services
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Blogs
+                </a>
+
+                <a href="#" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    About Us
+                </a>
+
+                <a href="contact.html" aria-current="page" class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <img src="assets/images/NABL_logo_new_image.png" alt="NABL Logo" class="h-10 lg:h-14">
+
+            <!-- Mobile Button -->
+            <button id="openMenu" class="lg:hidden text-3xl">
+                <i class="ri-menu-line"></i>
+            </button>
+
+        </div>
+    </header>
+
+     <div id="backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition duration-300 z-40"></div>
+
+    <!-- OFF CANVAS -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white/95 backdrop-blur-xl z-50 transform translate-x-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col overflow-y-auto overscroll-contain">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-4 py-2 border-b">
+            <a href="index.html" class="text-2xl font-bold text-slate-700 font-primary">Alethia Advanced Diagnostics</a>
+            <button id="closeMenu" class="hover:rotate-90 transition">
+                <i class="ri-close-line text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menu -->
+
+        <!-- MOBILE MENU DROPDOWN (FULL) -->
+        <div class="p-5 flex flex-col gap-4 text-gray-800 font-medium">
+
+            <a href="index.html" class="hover:text-rose-600 transition">Home</a>
+            <a href="test-book.html" class="hover:text-rose-600 transition">Book a Test</a>
+            <a href="find-a-doctor.html" class="hover:text-rose-600 transition">Find a Doctor</a>
+            <a href="#" class="hover:text-rose-600 transition">Services</a>
+            <a href="#" class="hover:text-rose-600 transition">Blogs</a>
+            <a href="#" class="hover:text-rose-600 transition">About Us</a>
+            <a href="contact.html" aria-current="page" class="text-rose-600">Contact Us</a>
+
+            <div class="space-y-3 pt-5 border-t">
+                <!-- Phone -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-phone-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="tel:8100381818" class="text-sm text-gray-800 block">+91 8100381818</a>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-mail-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="mailto:info@alethiadiagnostics.com" class="text-sm text-gray-700 break-all">
+                            info@alethiadiagnostics.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex items-start gap-3">
+                    <i class="ri-map-pin-2-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="https://maps.google.com" target="_blank" class="text-sm text-gray-700 hover:text-rose-600">
+                            10 Raja Subodh Mullick Square, Kolkata - 700013
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <section class="px-4 py-10 sm:py-14 lg:py-16" aria-labelledby="contact-title">
+            <div class="mx-auto grid max-w-7xl overflow-hidden rounded-2xl bg-white lg:grid-cols-[1.15fr_0.85fr] border border-slate-200">
+                <div class="p-5 sm:p-8 lg:p-10">
+                    <div class="relative min-h-[260px] overflow-hidden rounded-xl sm:min-h-[350px]">
+                        <img src="assets/images/doctor-booking.webp" alt="Doctor speaking with a patient at a clinic" class="absolute inset-0 h-full w-full object-cover object-[62%_center]">
+                        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/75 via-slate-900/25 to-transparent"></div>
+                        <div class="relative flex min-h-[260px] max-w-lg flex-col justify-end p-6 text-white sm:min-h-[350px] sm:p-8">
+                            <span class="mb-3 inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider backdrop-blur">
+                                <i class="ri-heart-pulse-line text-base text-amber-300" aria-hidden="true"></i> Here for your health
+                            </span>
+                            <h2 class="max-w-md text-2xl font-bold leading-tight sm:text-3xl">We’re here to help you feel informed and cared for.</h2>
+                            <p class="mt-3 max-w-md text-sm leading-6 text-slate-100 sm:text-base">Reach out to our team for diagnostic service enquiries, appointment assistance or general feedback.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 grid gap-3 sm:grid-cols-3">
+                        <article class="rounded-xl border border-slate-200 bg-white p-4">
+                            <div class="flex items-center gap-3">
+                                <span class="grid h-10 w-10 place-items-center rounded-lg bg-primary text-xl text-white"><i class="ri-map-pin-line" aria-hidden="true"></i></span>
+                                <h3 class="font-bold text-slate-900">Visit Us</h3>
+                            </div>
+                            <address class="mt-2 text-sm leading-6 text-slate-600 not-italic">10 Raja Subodh Mullick Square, Kolkata - 700013</address>
+                            <a href="https://maps.google.com/?q=10+Raja+Subodh+Mullick+Square+Kolkata+700013" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-1 text-xs font-bold text-secondary hover:underline">Get directions <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-white p-4">
+                            <div class="flex items-center gap-3">
+                                <span class="grid h-10 w-10 place-items-center rounded-lg bg-primary text-xl text-white"><i class="ri-phone-line" aria-hidden="true"></i></span>
+                                <h3 class="font-bold text-slate-900">Call Us</h3>
+                            </div>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">Available 24×7 for assistance.</p>
+                            <a href="tel:+918100381818" class="mt-3 inline-block text-sm font-bold text-secondary hover:underline">+91 8100381818</a>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-white p-4">
+                            <div class="flex items-center gap-3">
+                                <span class="grid h-10 w-10 place-items-center rounded-lg bg-primary text-xl text-white"><i class="ri-mail-line" aria-hidden="true"></i></span>
+                                <h3 class="font-bold text-slate-900">Email Us</h3>
+                            </div>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">Send your enquiry to our team.</p>
+                            <a href="mailto:info@alethiadiagnostics.com" class="mt-3 inline-block break-all text-xs font-bold text-secondary hover:underline">info@alethiadiagnostics.com</a>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-200 bg-white p-6 sm:p-8 lg:border-l lg:border-t-0 lg:p-10">
+                    <span class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-secondary">
+                        <span class="h-px w-7 bg-secondary"></span> Contact our team
+                    </span>
+                    <h1 id="contact-title" class="mt-3 text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">Get in touch</h1>
+                    <p class="mt-3 text-sm leading-6 text-slate-600 sm:text-base">Have an enquiry or feedback for us? Fill out the form and your email app will open with your message ready to send.</p>
+
+                    <form id="contact-form" class="mt-7 space-y-5">
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div>
+                                <label for="full-name" class="mb-2 block text-sm font-semibold text-slate-700">Full name</label>
+                                <input id="full-name" name="fullName" type="text" autocomplete="given-name" required class="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20">
+                            </div>
+                            <div>
+                                <label for="phone" class="mb-2 block text-sm font-semibold text-slate-700">Phone number <span class="font-normal text-slate-400">(optional)</span></label>
+                                <input id="phone" name="phone" type="tel" autocomplete="tel" class="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20">
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="email" class="mb-2 block text-sm font-semibold text-slate-700">Email address</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required class="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="mb-2 block text-sm font-semibold text-slate-700">Message</label>
+                            <textarea id="message" name="message" rows="3" required class="w-full resize-y rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20"></textarea>
+                        </div>
+                        <button type="submit" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-secondary px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">
+                            Get in touch <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-faq" class="bg-[#f7f5f2] py-14 lg:py-20" aria-labelledby="contact-faq-title">
+            <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+                <div class="lg:sticky lg:top-24 lg:self-start">
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-secondary">Need to Know</p>
+                    <h2 id="contact-faq-title" class="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">Contact Us FAQs</h2>
+                    <p class="mt-4 max-w-md leading-7 text-slate-600">Quick answers to common questions about contacting Alethia Advanced Diagnostics.</p>
+                    <a href="tel:+918100381818" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
+                        <i class="ri-phone-line" aria-hidden="true"></i> Call +91 8100381818
+                    </a>
+                </div>
+
+                <div class="faq-list space-y-3">
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3>
+                            <button id="contact-faq-question-1" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="contact-faq-answer-1">
+                                How can I contact Alethia for an enquiry?
+                                <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div id="contact-faq-answer-1" class="faq-answer" role="region" aria-labelledby="contact-faq-question-1" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p class="pb-5 pr-8 leading-7 text-slate-600">Call us at +91 8100381818, email info@alethiadiagnostics.com, or submit the contact form on this page.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3>
+                            <button id="contact-faq-question-2" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="contact-faq-answer-2">
+                                What happens when I submit the contact form?
+                                <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div id="contact-faq-answer-2" class="faq-answer" role="region" aria-labelledby="contact-faq-question-2" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p class="pb-5 pr-8 leading-7 text-slate-600">Your default email application opens with the enquiry details filled in. The website does not store or send the form directly; you need to send the email from your email app.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3>
+                            <button id="contact-faq-question-3" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="contact-faq-answer-3">
+                                Where is the diagnostic centre located?
+                                <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div id="contact-faq-answer-3" class="faq-answer" role="region" aria-labelledby="contact-faq-question-3" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p class="pb-5 pr-8 leading-7 text-slate-600">Visit us at 10 Raja Subodh Mullick Square, Kolkata - 700013. Use the “Get directions” link in the contact details to open a map.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3>
+                            <button id="contact-faq-question-4" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="contact-faq-answer-4">
+                                When can I call for assistance?
+                                <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div id="contact-faq-answer-4" class="faq-answer" role="region" aria-labelledby="contact-faq-question-4" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p class="pb-5 pr-8 leading-7 text-slate-600">Diagnostic and pathology services are open 24×7. Call +91 8100381818 for assistance.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3>
+                            <button id="contact-faq-question-5" type="button" class="faq-question flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-expanded="false" aria-controls="contact-faq-answer-5">
+                                What details should I include in my enquiry?
+                                <i class="ri-add-line faq-icon shrink-0 text-xl text-primary" aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div id="contact-faq-answer-5" class="faq-answer" role="region" aria-labelledby="contact-faq-question-5" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p class="pb-5 pr-8 leading-7 text-slate-600">Briefly describe how we can help. Include your contact details and, if relevant, the diagnostic service or appointment you are asking about. Avoid sharing sensitive medical information through a general enquiry.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer bg-slate-950 text-slate-300">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1fr_0.8fr] lg:gap-12 lg:py-16">
+            <div>
+                <a href="https://www.alethiadiagnostics.com/" class="inline-flex items-center gap-3 text-white" aria-label="Alethia Advanced Diagnostics home">
+                    <span class="grid h-11 w-11 place-items-center rounded-xl bg-primary text-xl font-bold">A</span>
+                    <span class="text-lg font-bold leading-tight">Alethia Advanced<br>Diagnostics</span>
+                </a>
+                <h2 class="mt-6 text-lg font-bold text-white">About Us</h2>
+                <p class="mt-3 max-w-md text-sm leading-7 text-slate-400">Alethia Advanced Diagnostics brings together modern diagnostic technology and experienced professionals to support accurate, timely testing and thoughtful patient care.</p>
+                <a href="https://www.alethiadiagnostics.com/about-us" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-300 transition hover:text-white">
+                    Learn more about us <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Quick Links</h2>
+                <ul class="mt-4 space-y-3 text-sm">
+                    <li><a href="#booking-search" class="transition hover:text-amber-300">Book a Test</a></li>
+                    <li><a href="find-a-doctor.html" class="transition hover:text-amber-300">Find a Doctor</a></li>
+                    <li><a href="#diagnostic-services-title" class="transition hover:text-amber-300">Our Services</a></li>
+                    <li><a href="#all-blogs" class="transition hover:text-amber-300">Health Blog</a></li>
+                    <li><a href="#faq" class="transition hover:text-amber-300">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Contact Us</h2>
+                <address class="mt-4 space-y-4 text-sm not-italic">
+                    <p class="flex items-start gap-3">
+                        <i class="ri-map-pin-2-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span>10 Raja Subodh Mullick Square,<br>Kolkata - 700013</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-phone-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span class="flex flex-col gap-2">
+                            <a href="tel:+918100381818" class="transition hover:text-amber-300">+91 8100381818</a>
+                            <a href="tel:+918100381816" class="transition hover:text-amber-300">+91 8100381816</a>
+                            <a href="tel:+919234543210" class="transition hover:text-amber-300">+91 92345 43210</a>
+                        </span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-mail-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <a href="mailto:info@alethiadiagnostics.com" class="break-all transition hover:text-amber-300">info@alethiadiagnostics.com</a>
+                    </p>
+                </address>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Connect With Us</h2>
+                <p class="mt-4 text-sm leading-6 text-slate-400">Follow Alethia Advanced Diagnostics on social media.</p>
+                <div class="mt-5 flex gap-3">
+                    <a href="https://www.facebook.com/alethiadiagnostics/" target="_blank" rel="noopener noreferrer" aria-label="Alethia Advanced Diagnostics on Facebook" class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-facebook-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alethiadiagnostics" target="_blank" rel="noopener noreferrer" aria-label="Alethia Advanced Diagnostics on Instagram" class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-instagram-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p class="mt-6 text-sm font-semibold text-amber-300">Open 24×7</p>
+                <p class="mt-1 text-sm text-slate-400">Diagnostic &amp; Pathology Services</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800">
+            <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Alethia Advanced Diagnostics. All rights reserved.</p>
+                <a href="https://www.alethiadiagnostics.com/" target="_blank" rel="noopener noreferrer" class="transition hover:text-amber-300">Visit our official website</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-answer').forEach(function (panel) {
+            panel.addEventListener('transitionend', function (event) {
+                if (event.propertyName === 'height' && this.closest('.faq-item').classList.contains('is-open')) {
+                    this.style.height = 'auto';
+                }
+            });
+        });
+
+        document.querySelectorAll('.faq-question').forEach(function (question) {
+            question.addEventListener('click', function () {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+                document.querySelectorAll('.faq-question').forEach(function (itemQuestion) {
+                    const expanded = itemQuestion === question ? !isExpanded : false;
+                    const panel = document.getElementById(itemQuestion.getAttribute('aria-controls'));
+                    const item = itemQuestion.closest('.faq-item');
+                    const wasExpanded = itemQuestion.getAttribute('aria-expanded') === 'true';
+
+                    if (expanded === wasExpanded) {
+                        return;
+                    }
+
+                    if (expanded) {
+                        item.classList.add('is-open');
+                        itemQuestion.setAttribute('aria-expanded', 'true');
+                        panel.setAttribute('aria-hidden', 'false');
+                        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                            panel.style.height = 'auto';
+                            return;
+                        }
+
+                        panel.style.height = '0px';
+                        void panel.offsetHeight;
+                        panel.style.height = panel.scrollHeight + 'px';
+                        return;
+                    }
+
+                    panel.style.height = panel.getBoundingClientRect().height + 'px';
+                    void panel.offsetHeight;
+                    itemQuestion.setAttribute('aria-expanded', 'false');
+                    panel.setAttribute('aria-hidden', 'true');
+                    item.classList.remove('is-open');
+                    panel.style.height = '0px';
+                });
+            });
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (!this.reportValidity()) {
+                return;
+            }
+
+            const formData = new FormData(this);
+            const subject = 'Contact enquiry from ' + formData.get('fullName');
+            const body = [
+                'Name: ' + formData.get('fullName'),
+                'Email: ' + formData.get('email'),
+                'Phone: ' + (formData.get('phone') || 'Not provided'),
+                '',
+                'Message:',
+                formData.get('message'),
+            ].join('\n');
+
+            window.location.href = 'mailto:info@alethiadiagnostics.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        });
+    </script>
+</body>
+
+</html>
