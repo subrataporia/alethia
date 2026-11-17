@@ -762,6 +762,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+        const openBtn = document.getElementById("openMenu");
+        const closeBtn = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const backdrop = document.getElementById("backdrop");
+        let isMenuOpen = false;
+        function disableScroll() {
+            document.body.classList.add("menu-open");
+            isMenuOpen = true;
+        }
+        function enableScroll() {
+            document.body.classList.remove("menu-open");
+            isMenuOpen = false;
+        }
+        // OPEN
+        if (openBtn) {
+            openBtn.addEventListener("click", () => {
+                mobileMenu.classList.remove("translate-x-full");
+                backdrop.classList.remove(
+                    "opacity-0",
+                    "pointer-events-none"
+                );
+                disableScroll();
+            });
+        }
+        // CLOSE
+        function closeMenuFunc() {
+            mobileMenu.classList.add("translate-x-full");
+            backdrop.classList.add(
+                "opacity-0",
+                "pointer-events-none"
+            );
+            enableScroll();
+        }
+        if (closeBtn) {
+            closeBtn.addEventListener("click", closeMenuFunc);
+        }
+        if (backdrop) {
+            backdrop.addEventListener("click", closeMenuFunc);
+        }
+    </script>
+
+    <script>
         $(function () {
             $('.faq-answer').on('transitionend', function (event) {
                 if (event.originalEvent.propertyName === 'height' && this.closest('.faq-item').classList.contains('is-open')) {
