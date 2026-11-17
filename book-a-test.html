@@ -1225,8 +1225,23 @@
             }
 
             function openTestDetails(id) {
-                // Placeholder — connect to a details modal or page
-                alert('View details for: ' + id + '\n(Connect to your test detail page or modal here)');
+                const testMap = {
+                    'cbc': { name: 'Complete Blood Count (CBC)', price: 350 },
+                    'lipid': { name: 'Lipid Profile', price: 600 },
+                    'thyroid': { name: 'Thyroid Profile', price: 450 },
+                    'hba1c': { name: 'HbA1c', price: 400 },
+                    'lft': { name: 'Liver Function Test', price: 700 },
+                    'kft': { name: 'Kidney Function Test', price: 650 },
+                    'vitd': { name: 'Vitamin D', price: 900 },
+                    'ure': { name: 'Urine Routine Examination', price: 150 },
+                    'aarogya': { name: 'Aarogya Full Body Checkup', price: 1499 },
+                    'covid': { name: 'COVID-19 RT-PCR Test', price: 500 },
+                    'vitb12': { name: 'Vitamin B12', price: 700 },
+                    'ca125': { name: 'CA-125 Cancer Antigen', price: 1200 }
+                };
+                const test = testMap[id] || { name: id, price: '' };
+                const params = new URLSearchParams({ test: test.name, price: test.price });
+                window.location.href = 'test-details.html?' + params.toString();
             }
         </script>
 
