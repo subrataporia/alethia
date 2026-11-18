@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Alethia Advanced Diagnostics</title>
+    <meta name="description"
+        content="Explore advanced diagnostics, preventive health packages and super speciality consultations at Alethia Advanced Diagnostics.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--primary-color)',
+                        secondary: 'var(--secondary-color)',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <!-- TOPBAR -->
+    <section class="bg-slate-800 py-2">
+        <div class="max-w-7xl mx-auto px-3 lg:px-0">
+            <p class="text-center text-base text-white font-light">
+                Alethia Advanced Diagnostics is now <b class="bg-rose-500 px-1 py-0.5">OPEN 24×7</b> for all <span
+                    class="font-semibold text-yellow-400 color-pulse">Diagnostic & Pathology Services</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-40 border-b border-gray-200 bg-[#f7f5f2] transition-all lg:py-3 py-2 px-3 lg:px-0">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Alethia Advanced Diagonsitic" class="h-10 lg:h-14">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-black font-medium uppercase">
+
+                <a href="index.html"
+                    class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Home
+                </a>
+
+                <a href="test-book.html"
+                    class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Book a Test
+                </a>
+
+                <a href="find-a-doctor.html"
+                    class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Find a Doctor
+                </a>
+
+                <a href="services.html" aria-current="page"
+                    class="inline-flex items-center py-1 border-b border-secondary text-secondary transition duration-300">
+                    Services
+                </a>
+
+                <a href="#"
+                    class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Blogs
+                </a>
+
+                <a href="about-us.html"
+                    class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    About Us
+                </a>
+
+                <a href="contact.html" aria-current="page"
+                    class="inline-flex items-center py-1 hover:border-b hover:border-secondary hover:text-secondary transition duration-300">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <img src="assets/images/NABL_logo_new_image.png" alt="NABL Logo" class="h-10 lg:h-14">
+
+            <!-- Mobile Button -->
+            <button id="openMenu" class="lg:hidden text-3xl">
+                <i class="ri-menu-line"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <div id="backdrop"
+        class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition duration-300 z-40">
+    </div>
+
+    <!-- OFF CANVAS -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white/95 backdrop-blur-xl z-50 transform translate-x-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col overflow-y-auto overscroll-contain">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-4 py-2 border-b">
+            <a href="index.html" class="text-2xl font-bold text-slate-700 font-primary">Alethia Advanced Diagnostics</a>
+            <button id="closeMenu" class="hover:rotate-90 transition">
+                <i class="ri-close-line text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menu -->
+
+        <!-- MOBILE MENU DROPDOWN (FULL) -->
+        <div class="p-5 flex flex-col gap-4 text-gray-800 font-medium">
+
+            <a href="index.html" class="hover:text-rose-600 transition">Home</a>
+            <a href="test-book.html" class="hover:text-rose-600 transition">Book a Test</a>
+            <a href="find-a-doctor.html" class="hover:text-rose-600 transition">Find a Doctor</a>
+            <a href="services.html" aria-current="page" class="text-rose-600">Services</a>
+            <a href="#" class="hover:text-rose-600 transition">Blogs</a>
+            <a href="about-us.html" class="hover:text-rose-600 transition">About Us</a>
+            <a href="contact.html" aria-current="page" class="text-rose-600">Contact Us</a>
+
+            <div class="space-y-3 pt-5 border-t">
+                <!-- Phone -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-phone-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="tel:8100381818" class="text-sm text-gray-800 block">+91 8100381818</a>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-center gap-3">
+                    <i class="ri-mail-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="mailto:info@alethiadiagnostics.com" class="text-sm text-gray-700 break-all">
+                            info@alethiadiagnostics.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex items-start gap-3">
+                    <i class="ri-map-pin-2-fill text-rose-600 text-lg"></i>
+                    <div>
+                        <a href="https://maps.google.com" target="_blank"
+                            class="text-sm text-gray-700 hover:text-rose-600">
+                            10 Raja Subodh Mullick Square, Kolkata - 700013
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-800 to-[#1b3a4a] text-white" aria-labelledby="page-title">
+            <div class="absolute -right-20 -top-32 h-80 w-80 rounded-full border border-white/10"></div>
+            <div class="absolute -bottom-48 right-1/4 h-80 w-80 rounded-full border border-white/10"></div>
+            <div class="relative mx-auto max-w-7xl px-4 py-10 sm:py-12">
+                <nav aria-label="Breadcrumb" class="mb-5 text-sm text-slate-300">
+                    <ol class="flex flex-wrap items-center gap-2">
+                        <li><a href="index.html" class="transition hover:text-white">Home</a></li>
+                        <li aria-hidden="true"><i class="ri-arrow-right-s-line"></i></li>
+                        <li class="font-semibold text-white" aria-current="page">Services</li>
+                    </ol>
+                </nav>
+                <div class="max-w-2xl">
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-amber-300">Our Healthcare Services</p>
+                    <h1 id="page-title" class="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">Advanced Diagnostics &amp; Super Speciality Care</h1>
+                    <p class="mt-4 max-w-xl text-sm leading-7 text-slate-200 sm:text-base">Comprehensive, precise and patient-centric healthcare, with advanced diagnostics and specialist consultations under one roof.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="px-4 py-12 lg:py-16" aria-labelledby="diagnostics-title">
+            <div class="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:gap-14">
+                <div>
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.16em] text-secondary">Advanced Diagnostics</p>
+                    <h2 id="diagnostics-title" class="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">Technology and expertise working for your health</h2>
+                    <p class="mt-5 leading-8 text-slate-600">At Alethia Advanced Diagnostics &amp; Super Speciality Clinics, we are committed to delivering comprehensive, precise, and patient-centric healthcare. Our state-of-the-art diagnostic services and curated super speciality consultations are designed for early detection, accurate diagnosis and expert care.</p>
+                    <p class="mt-4 leading-7 text-slate-600">Our diagnostic division uses cutting-edge technology and experienced professionals to deliver swift, reliable, high-quality results.</p>
+                    <div class="mt-7 grid gap-3 sm:grid-cols-2">
+                        <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <i class="ri-microscope-line text-2xl text-primary" aria-hidden="true"></i>
+                            <h3 class="mt-2 font-bold text-slate-900">Pathology &amp; Biochemistry</h3>
+                            <p class="mt-1 text-sm leading-6 text-slate-600">Routine and specialized blood, urine and tissue tests.</p>
+                        </div>
+                        <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <i class="ri-heart-pulse-line text-2xl text-primary" aria-hidden="true"></i>
+                            <h3 class="mt-2 font-bold text-slate-900">Health Check Packages</h3>
+                            <p class="mt-1 text-sm leading-6 text-slate-600">Preventive checkups tailored to different ages and needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative min-h-[320px] overflow-hidden rounded-2xl border border-slate-200 shadow-xl sm:min-h-[420px]">
+                    <img src="assets/images/service_img.webp"
+                        alt="Modern advanced diagnostic laboratory"
+                        class="absolute inset-0 h-full w-full object-cover"
+                        referrerpolicy="no-referrer">
+                </div>
+            </div>
+        </section>
+
+        <!-- DIAGNOSTIC SERVICES -->
+        <section class="bg-[#f7f5f2] py-12 lg:py-16" aria-labelledby="service-cards-title">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="mb-8 max-w-2xl">
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.16em] text-secondary">Diagnostic Care</p>
+                    <h2 id="service-cards-title" class="text-3xl font-bold text-slate-900 sm:text-4xl">Explore Our Services</h2>
+                </div>
+
+                <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="relative h-52 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Clinical pathology laboratory testing" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-900">Clinical Pathology, Biochemistry &amp; Haematology</h3>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">Accurate blood, urine and tissue analysis using modern systems and quality assurance protocols.</p>
+                            <a href="https://alethiadiagnostics.com/services-details/clinical-pathology-biochemistry-haematology" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-bold text-secondary">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="relative h-52 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1576089172869-4f5f6f315620?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Microbiology and serology specialist" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-900">Microbiology &amp; Serology</h3>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">Specialized testing to identify infections and assess immune response with dependable turnaround.</p>
+                            <a href="https://alethiadiagnostics.com/services-details/microbiology-serology" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-bold text-secondary">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="relative h-52 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Histopathology and cytology examination" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-900">Histopathology &amp; Cytology</h3>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">Detailed examination of tissue and cell samples to support precise clinical decisions.</p>
+                            <a href="https://alethiadiagnostics.com/services-details/histopathology-cytology" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-bold text-secondary">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="relative h-52 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Preventive wellness health check" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-900">Preventive &amp; Wellness Panels</h3>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">Comprehensive health check packages tailored for every age group and health need.</p>
+                            <a href="https://alethiadiagnostics.com/services-details/preventive-wellness-panels" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-bold text-secondary">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="relative h-52 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Home collection and digital reporting" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" referrerpolicy="no-referrer">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-900">Home Collection &amp; E-Reporting</h3>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">Convenient sample collection at home and secure access to reports, with support available around the clock.</p>
+                            <a href="https://alethiadiagnostics.com/services-details/home-collection-e-reporting" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-sm font-bold text-secondary">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPER SPECIALITY -->
+        <section class="px-4 py-12 lg:py-16" aria-labelledby="speciality-title">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
+                    <div>
+                        <p class="mb-2 text-sm font-bold uppercase tracking-[0.16em] text-secondary">Super Speciality Consultations</p>
+                        <h2 id="speciality-title" class="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">Expert specialists, coordinated care</h2>
+                        <p class="mt-4 leading-7 text-slate-600">Experienced super specialists across disciplines provide expert consultation and management of complex medical conditions.</p>
+                        <a href="find-a-doctor.html" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-secondary px-5 py-3 text-sm font-bold text-white transition hover:bg-red-700">
+                            Find a Doctor <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Cardiology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Endocrinology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Gastroenterology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Nephrology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Neurology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Pulmonology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Rheumatology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Dermatology &amp; Cosmetology</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Orthopaedics</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">ENT</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Gynaecology &amp; Women's Health</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Internal Medicine</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Pediatrics</a>
+                        <a href="find-a-doctor.html" class="rounded-xl border border-slate-200 p-4 text-sm font-bold text-slate-800 transition hover:border-primary hover:bg-amber-50">Psychiatry &amp; Mental Health</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE -->
+        <section class="bg-slate-950 py-12 text-white lg:py-16" aria-labelledby="why-title">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="mb-8 max-w-2xl">
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.16em] text-amber-300">Why Choose Alethia?</p>
+                    <h2 id="why-title" class="text-3xl font-bold sm:text-4xl">Care you can trust, experience you can feel</h2>
+                </div>
+                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5"><i class="ri-user-heart-line text-2xl text-amber-300"></i><p class="mt-3 text-sm font-bold">Trusted by doctors and patients</p></article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5"><i class="ri-hand-heart-line text-2xl text-amber-300"></i><p class="mt-3 text-sm font-bold">Personalized, welcoming care</p></article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5"><i class="ri-time-line text-2xl text-amber-300"></i><p class="mt-3 text-sm font-bold">Minimal turnaround time</p></article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5"><i class="ri-shield-check-line text-2xl text-amber-300"></i><p class="mt-3 text-sm font-bold">Expert medical consultants</p></article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5"><i class="ri-scales-3-line text-2xl text-amber-300"></i><p class="mt-3 text-sm font-bold">Transparent and ethical care</p></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="service-faq" class="bg-[#f7f5f2] py-12 lg:py-16" aria-labelledby="faq-title">
+            <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
+                <div class="lg:sticky lg:top-24 lg:self-start">
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.16em] text-secondary">Need to Know</p>
+                    <h2 id="faq-title" class="text-3xl font-bold text-slate-900 sm:text-4xl">Services FAQs</h2>
+                    <p class="mt-4 leading-7 text-slate-600">Quick answers about diagnostic tests, appointments and home collection.</p>
+                    <a href="tel:+918100381818" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white"><i class="ri-phone-line"></i> Call +91 8100381818</a>
+                </div>
+                <div class="space-y-3">
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3><button type="button" class="faq-question flex w-full items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900" aria-expanded="false" aria-controls="faq-answer-1">What diagnostic services are available?<i class="ri-add-line faq-icon text-xl text-primary"></i></button></h3>
+                        <div id="faq-answer-1" class="faq-answer" role="region" aria-hidden="true"><div class="faq-answer-inner"><p class="pb-5 pr-8 leading-7 text-slate-600">We offer pathology and biochemistry, microbiology and serology, histopathology and cytology, preventive wellness panels, and home collection with e-reporting.</p></div></div>
+                    </article>
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3><button type="button" class="faq-question flex w-full items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900" aria-expanded="false" aria-controls="faq-answer-2">Can I book a specialist consultation?<i class="ri-add-line faq-icon text-xl text-primary"></i></button></h3>
+                        <div id="faq-answer-2" class="faq-answer" role="region" aria-hidden="true"><div class="faq-answer-inner"><p class="pb-5 pr-8 leading-7 text-slate-600">Yes. Super speciality consultations are available by prior appointment across cardiology, endocrinology, gastroenterology, nephrology, neurology and other disciplines.</p></div></div>
+                    </article>
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3><button type="button" class="faq-question flex w-full items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900" aria-expanded="false" aria-controls="faq-answer-3">Is home sample collection available?<i class="ri-add-line faq-icon text-xl text-primary"></i></button></h3>
+                        <div id="faq-answer-3" class="faq-answer" role="region" aria-hidden="true"><div class="faq-answer-inner"><p class="pb-5 pr-8 leading-7 text-slate-600">Home collection can be arranged for eligible tests. Contact us to confirm availability, timing and preparation requirements for your test.</p></div></div>
+                    </article>
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3><button type="button" class="faq-question flex w-full items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900" aria-expanded="false" aria-controls="faq-answer-4">Are health check packages available?<i class="ri-add-line faq-icon text-xl text-primary"></i></button></h3>
+                        <div id="faq-answer-4" class="faq-answer" role="region" aria-hidden="true"><div class="faq-answer-inner"><p class="pb-5 pr-8 leading-7 text-slate-600">Yes. Comprehensive preventive health check packages can be selected according to age, health needs and specialist guidance.</p></div></div>
+                    </article>
+                    <article class="faq-item rounded-xl border border-slate-200 bg-white px-5 shadow-sm">
+                        <h3><button type="button" class="faq-question flex w-full items-center justify-between gap-4 py-5 text-left font-semibold text-slate-900" aria-expanded="false" aria-controls="faq-answer-5">When can I contact Alethia for assistance?<i class="ri-add-line faq-icon text-xl text-primary"></i></button></h3>
+                        <div id="faq-answer-5" class="faq-answer" role="region" aria-hidden="true"><div class="faq-answer-inner"><p class="pb-5 pr-8 leading-7 text-slate-600">Diagnostic and pathology services are open 24×7. Call +91 8100381818 for test, report or appointment assistance.</p></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="px-4 py-12 lg:py-16" aria-label="Expert consultation">
+            <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 rounded-2xl bg-gradient-to-r from-primary to-[#9b7138] p-7 text-white shadow-lg sm:p-10 lg:flex-row lg:items-center">
+                <div><p class="text-sm font-bold uppercase tracking-[0.16em] text-white/80">Need Personalized Advice?</p><h2 class="mt-2 text-2xl font-bold sm:text-3xl">Book an appointment or visit us today</h2></div>
+                <a href="tel:+919903336257" class="inline-flex shrink-0 items-center gap-3 rounded-lg bg-white px-6 py-3.5 text-sm font-bold text-slate-900 shadow-md"><i class="ri-phone-line text-lg text-secondary"></i> Book Now for Expert Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer bg-slate-950 text-slate-300">
+        <div
+            class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1fr_0.8fr] lg:gap-12 lg:py-16">
+            <div>
+                <a href="https://www.alethiadiagnostics.com/" class="inline-flex items-center gap-3 text-white"
+                    aria-label="Alethia Advanced Diagnostics home">
+                    <span class="grid h-11 w-11 place-items-center rounded-xl bg-primary text-xl font-bold">A</span>
+                    <span class="text-lg font-bold leading-tight">Alethia Advanced<br>Diagnostics</span>
+                </a>
+                <h2 class="mt-6 text-lg font-bold text-white">About Us</h2>
+                <p class="mt-3 max-w-md text-sm leading-7 text-slate-400">Alethia Advanced Diagnostics brings together
+                    modern diagnostic technology and experienced professionals to support accurate, timely testing and
+                    thoughtful patient care.</p>
+                <a href="https://www.alethiadiagnostics.com/about-us" target="_blank" rel="noopener noreferrer"
+                    class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-300 transition hover:text-white">
+                    Learn more about us <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Quick Links</h2>
+                <ul class="mt-4 space-y-3 text-sm">
+                    <li><a href="#booking-search" class="transition hover:text-amber-300">Book a Test</a></li>
+                    <li><a href="find-a-doctor.html" class="transition hover:text-amber-300">Find a Doctor</a></li>
+                    <li><a href="#diagnostic-services-title" class="transition hover:text-amber-300">Our Services</a>
+                    </li>
+                    <li><a href="#all-blogs" class="transition hover:text-amber-300">Health Blog</a></li>
+                    <li><a href="#faq" class="transition hover:text-amber-300">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Contact Us</h2>
+                <address class="mt-4 space-y-4 text-sm not-italic">
+                    <p class="flex items-start gap-3">
+                        <i class="ri-map-pin-2-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span>10 Raja Subodh Mullick Square,<br>Kolkata - 700013</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-phone-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <span class="flex flex-col gap-2">
+                            <a href="tel:+918100381818" class="transition hover:text-amber-300">+91 8100381818</a>
+                            <a href="tel:+918100381816" class="transition hover:text-amber-300">+91 8100381816</a>
+                            <a href="tel:+919234543210" class="transition hover:text-amber-300">+91 92345 43210</a>
+                        </span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <i class="ri-mail-line mt-0.5 text-lg text-amber-300" aria-hidden="true"></i>
+                        <a href="mailto:info@alethiadiagnostics.com"
+                            class="break-all transition hover:text-amber-300">info@alethiadiagnostics.com</a>
+                    </p>
+                </address>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold text-white">Connect With Us</h2>
+                <p class="mt-4 text-sm leading-6 text-slate-400">Follow Alethia Advanced Diagnostics on social media.
+                </p>
+                <div class="mt-5 flex gap-3">
+                    <a href="https://www.facebook.com/alethiadiagnostics/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Alethia Advanced Diagnostics on Facebook"
+                        class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-facebook-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alethiadiagnostics" target="_blank" rel="noopener noreferrer"
+                        aria-label="Alethia Advanced Diagnostics on Instagram"
+                        class="grid h-11 w-11 place-items-center rounded-full border border-slate-700 text-xl text-white transition hover:border-primary hover:bg-primary">
+                        <i class="ri-instagram-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <p class="mt-6 text-sm font-semibold text-amber-300">Open 24×7</p>
+                <p class="mt-1 text-sm text-slate-400">Diagnostic &amp; Pathology Services</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800">
+            <div
+                class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Alethia Advanced Diagnostics. All rights reserved.</p>
+                <a href="https://www.alethiadiagnostics.com/" target="_blank" rel="noopener noreferrer"
+                    class="transition hover:text-amber-300">Visit our official website</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const openBtn = document.getElementById("openMenu");
+        const closeBtn = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const backdrop = document.getElementById("backdrop");
+
+        function openMenuFunc() {
+            mobileMenu.classList.remove("translate-x-full");
+            backdrop.classList.remove("opacity-0", "pointer-events-none");
+            backdrop.classList.add("opacity-100");
+            document.body.classList.add("overflow-hidden");
+            closeBtn.focus();
+        }
+
+        function closeMenuFunc() {
+            mobileMenu.classList.add("translate-x-full");
+            backdrop.classList.add("opacity-0", "pointer-events-none");
+            backdrop.classList.remove("opacity-100");
+            document.body.classList.remove("overflow-hidden");
+            openBtn.focus();
+        }
+
+        openBtn.addEventListener("click", openMenuFunc);
+        closeBtn.addEventListener("click", closeMenuFunc);
+        backdrop.addEventListener("click", closeMenuFunc);
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && !mobileMenu.classList.contains("translate-x-full")) {
+                closeMenuFunc();
+            }
+        });
+
+        document.querySelectorAll(".faq-answer").forEach(function (panel) {
+            panel.addEventListener("transitionend", function (event) {
+                if (event.propertyName === "height" && this.closest(".faq-item").classList.contains("is-open")) {
+                    this.style.height = "auto";
+                }
+            });
+        });
+
+        document.querySelectorAll(".faq-question").forEach(function (question) {
+            question.addEventListener("click", function () {
+                const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+                document.querySelectorAll(".faq-question").forEach(function (itemQuestion) {
+                    const expanded = itemQuestion === question ? !isExpanded : false;
+                    const panel = document.getElementById(itemQuestion.getAttribute("aria-controls"));
+                    const item = itemQuestion.closest(".faq-item");
+                    const wasExpanded = itemQuestion.getAttribute("aria-expanded") === "true";
+
+                    if (expanded === wasExpanded) return;
+
+                    if (expanded) {
+                        item.classList.add("is-open");
+                        itemQuestion.setAttribute("aria-expanded", "true");
+                        panel.setAttribute("aria-hidden", "false");
+                        itemQuestion.querySelector(".faq-icon").classList.remove("ri-add-line");
+                        itemQuestion.querySelector(".faq-icon").classList.add("ri-subtract-line");
+
+                        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                            panel.style.height = "auto";
+                            return;
+                        }
+
+                        panel.style.height = "0px";
+                        void panel.offsetHeight;
+                        panel.style.height = panel.scrollHeight + "px";
+                        return;
+                    }
+
+                    panel.style.height = panel.getBoundingClientRect().height + "px";
+                    void panel.offsetHeight;
+                    itemQuestion.setAttribute("aria-expanded", "false");
+                    panel.setAttribute("aria-hidden", "true");
+                    item.classList.remove("is-open");
+                    itemQuestion.querySelector(".faq-icon").classList.remove("ri-subtract-line");
+                    itemQuestion.querySelector(".faq-icon").classList.add("ri-add-line");
+                    panel.style.height = "0px";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
